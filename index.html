@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Movies Website</title>
+
+        <!-- fav-icon -->
+        <link rel="shortcut icon" href="./images/fav icon.png" />
+
+        <!-- font-family Poppins -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins"
+            rel="stylesheet"
+        />
+
+        <!-- font-awesome cdn -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Slight slider css -->
+        <link rel="stylesheet" href="./css/lightslider.css" />
+
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+    <body>
+        <div class="app">
+            <!-- Header Movies -->
+            <header>
+                <!-- Navigation -->
+                <nav>
+                    <!-- Logo -->
+                    <a href="#" class="logo">
+                        <img src="./images/logo.png" alt="./images/logo.png" />
+                    </a>
+
+                    <!-- Menu -->
+                    <ul class="menu">
+                        <div class="close-btn">
+                            <i class="fas fa-times"></i>
+                        </div>
+
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Movies</a>
+                        </li>
+
+                        <li>
+                            <a href="#">TV Shows</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Hollywood</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Horror</a>
+                        </li>
+                    </ul>
+
+                    <!-- Search -->
+                    <div class="search">
+                        <input type="text" placeholder="Find Your Movies" />
+                        <i class="fas fa-search"></i>
+                    </div>
+
+                    <div class="menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- Carousel Movies-->
+            <section class="carousel">
+                <h1 class="title">ShowCase</h1>
+
+                <!-- Carousel Movie Slider -->
+                <ul id="carousel-show" class="cs-hidden">
+                    <li class="item-a">
+                        <div class="carousel-item">
+                            <img
+                                src="./images/s-1.jpg"
+                                alt="./images/s-1.jpg"
+                            />
+                        </div>
+                    </li>
+
+                    <li class="item-b">
+                        <div class="carousel-item">
+                            <img
+                                src="./images/s-2.jpg"
+                                alt="./images/s-2.jpg"
+                            />
+                        </div>
+                    </li>
+
+                    <li class="item-c">
+                        <div class="carousel-item">
+                            <img
+                                src="./images/s-3.jpg"
+                                alt="./images/s-3.jpg"
+                            />
+                        </div>
+                    </li>
+
+                    <li class="item-d">
+                        <div class="carousel-item">
+                            <img
+                                src="./images/s-4.jpg"
+                                alt="./images/s-4.jpg"
+                            />
+                        </div>
+                    </li>
+
+                    <li class="item-e">
+                        <div class="carousel-item">
+                            <img
+                                src="./images/s-5.png"
+                                alt="./images/s-5.png"
+                            />
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Latest Movies -->
+            <section class="latest">
+                <h2 class="title">Lastest Movie</h2>
+
+                <!-- Latest Movie Slider -->
+                <ul id="latest-show" class="cs-hidden">
+                    <li class="item-a">
+                        <div class="latest-item">
+                            <!-- latest img -->
+                            <div class="latest-item-img">
+                                <img
+                                    src="./images/m-1.jpg"
+                                    alt="./images/m-1.jpg"
+                                />
+                            </div>
+
+                            <!-- latest text -->
+                            <div class="latest-b-text">
+                                <strong>Kin 2018</strong>
+                                <p>Action Movie</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="item-b">
+                        <div class="latest-item">
+                            <!-- latest img -->
+                            <div class="latest-item-img">
+                                <img
+                                    src="./images/m-2.jpg"
+                                    alt="./images/m-2.jpg"
+                                />
+                            </div>
+
+                            <!-- latest text -->
+                            <div class="latest-b-text">
+                                <strong>Kin 2018</strong>
+                                <p>Action Movie</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="item-c">
+                        <div class="latest-item">
+                            <!-- latest img -->
+                            <div class="latest-item-img">
+                                <img
+                                    src="./images/m-3.jpg"
+                                    alt="./images/m-3.jpg"
+                                />
+                            </div>
+
+                            <!-- latest text -->
+                            <div class="latest-b-text">
+                                <strong>Kin 2018</strong>
+                                <p>Action Movie</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="item-d">
+                        <div class="latest-item">
+                            <!-- latest img -->
+                            <div class="latest-item-img">
+                                <img
+                                    src="./images/m-4.jpg"
+                                    alt="./images/m-4.jpg"
+                                />
+                            </div>
+
+                            <!-- latest text -->
+                            <div class="latest-b-text">
+                                <strong>Kin 2018</strong>
+                                <p>Action Movie</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="item-e">
+                        <div class="latest-item">
+                            <!-- latest img -->
+                            <div class="latest-item-img">
+                                <img
+                                    src="./images/m-5.jpg"
+                                    alt="./images/m-5.jpg"
+                                />
+                            </div>
+
+                            <!-- latest text -->
+                            <div class="latest-b-text">
+                                <strong>Kin 2018</strong>
+                                <p>Action Movie</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="item-f">
+                        <div class="latest-item">
+                            <!-- latest img -->
+                            <div class="latest-item-img">
+                                <img
+                                    src="./images/m-6.jpg"
+                                    alt="./images/m-6.jpg"
+                                />
+                            </div>
+
+                            <!-- latest text -->
+                            <div class="latest-b-text">
+                                <strong>Kin 2018</strong>
+                                <p>Action Movie</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="item-g">
+                        <div class="latest-item">
+                            <!-- latest img -->
+                            <div class="latest-item-img">
+                                <img
+                                    src="./images/m-7.jpeg"
+                                    alt="./images/m-7.jpeg"
+                                />
+                            </div>
+
+                            <!-- latest text -->
+                            <div class="latest-b-text">
+                                <strong>Kin 2018</strong>
+                                <p>Action Movie</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="item-h">
+                        <div class="latest-item">
+                            <!-- latest img -->
+                            <div class="latest-item-img">
+                                <img
+                                    src="./images/m-3.jpg"
+                                    alt="./images/m-3.jpg"
+                                />
+                            </div>
+
+                            <!-- latest text -->
+                            <div class="latest-b-text">
+                                <strong>Kin 2018</strong>
+                                <p>Action Movie</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Movies -->
+            <section class="movies">
+                <h2 class="title">Movies</h2>
+
+                <div class="movies-list">
+                    <div class="movies-item">
+                        <!-- Movie img -->
+                        <div class="movies-item-img">
+                            <div class="quality">HDRip</div>
+                            <img
+                                src="./images/l-1.jpg"
+                                alt="./images/l-1.jpg"
+                            />
+                        </div>
+
+                        <!-- Movie text -->
+                        <div class="movies-item-text">
+                            <a href="#"
+                                >Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Natus nesciunt tempore cum
+                                dolore quos, ducimus recusandae quis esse dolor
+                                nihil molestiae id reprehenderit saepe
+                                asperiores maxime veritatis eaque ex
+                                quisquam?</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="movies-item">
+                        <!-- Movie img -->
+                        <div class="movies-item-img">
+                            <div class="quality">HDRip</div>
+                            <img
+                                src="./images/l-2.jpg"
+                                alt="./images/l-2.jpg"
+                            />
+                        </div>
+
+                        <!-- Movie text -->
+                        <div class="movies-item-text">
+                            <a href="#"
+                                >Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Natus nesciunt tempore cum
+                                dolore quos, ducimus recusandae quis esse dolor
+                                nihil molestiae id reprehenderit saepe
+                                asperiores maxime veritatis eaque ex
+                                quisquam?</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="movies-item">
+                        <!-- Movie img -->
+                        <div class="movies-item-img">
+                            <div class="quality">HDRip</div>
+                            <img
+                                src="./images/l-3.jpg"
+                                alt="./images/l-3.jpg"
+                            />
+                        </div>
+
+                        <!-- Movie text -->
+                        <div class="movies-item-text">
+                            <a href="#"
+                                >Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Natus nesciunt tempore cum
+                                dolore quos, ducimus recusandae quis esse dolor
+                                nihil molestiae id reprehenderit saepe
+                                asperiores maxime veritatis eaque ex
+                                quisquam?</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="movies-item">
+                        <!-- Movie img -->
+                        <div class="movies-item-img">
+                            <div class="quality">HDRip</div>
+                            <img
+                                src="./images/l-4.jpg"
+                                alt="./images/l-4.jpg"
+                            />
+                        </div>
+
+                        <!-- Movie text -->
+                        <div class="movies-item-text">
+                            <a href="#"
+                                >Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Natus nesciunt tempore cum
+                                dolore quos, ducimus recusandae quis esse dolor
+                                nihil molestiae id reprehenderit saepe
+                                asperiores maxime veritatis eaque ex
+                                quisquam?</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="movies-item">
+                        <!-- Movie img -->
+                        <div class="movies-item-img">
+                            <div class="quality">HDRip</div>
+                            <img
+                                src="./images/l-5.jpg"
+                                alt="./images/l-5.jpg"
+                            />
+                        </div>
+
+                        <!-- Movie text -->
+                        <div class="movies-item-text">
+                            <a href="#"
+                                >Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Natus nesciunt tempore cum
+                                dolore quos, ducimus recusandae quis esse dolor
+                                nihil molestiae id reprehenderit saepe
+                                asperiores maxime veritatis eaque ex
+                                quisquam?</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="movies-item">
+                        <!-- Movie img -->
+                        <div class="movies-item-img">
+                            <div class="quality">HDRip</div>
+                            <img
+                                src="./images/l-6.jpg"
+                                alt="./images/l-6.jpg"
+                            />
+                        </div>
+
+                        <!-- Movie text -->
+                        <div class="movies-item-text">
+                            <a href="#"
+                                >Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Natus nesciunt tempore cum
+                                dolore quos, ducimus recusandae quis esse dolor
+                                nihil molestiae id reprehenderit saepe
+                                asperiores maxime veritatis eaque ex
+                                quisquam?</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="movies-item">
+                        <!-- Movie img -->
+                        <div class="movies-item-img">
+                            <div class="quality">HDRip</div>
+                            <img
+                                src="./images/l-7.jpg"
+                                alt="./images/l-7.jpg"
+                            />
+                        </div>
+
+                        <!-- Movie text -->
+                        <div class="movies-item-text">
+                            <a href="#"
+                                >Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Natus nesciunt tempore cum
+                                dolore quos, ducimus recusandae quis esse dolor
+                                nihil molestiae id reprehenderit saepe
+                                asperiores maxime veritatis eaque ex
+                                quisquam?</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="movies-item">
+                        <!-- Movie img -->
+                        <div class="movies-item-img">
+                            <div class="quality">HDRip</div>
+                            <img
+                                src="./images/l-8.jpg"
+                                alt="./images/l-8.jpg"
+                            />
+                        </div>
+
+                        <!-- Movie text -->
+                        <div class="movies-item-text">
+                            <a href="#"
+                                >Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Natus nesciunt tempore cum
+                                dolore quos, ducimus recusandae quis esse dolor
+                                nihil molestiae id reprehenderit saepe
+                                asperiores maxime veritatis eaque ex
+                                quisquam?</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Jquery cdn -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Slight slider js -->
+        <script src="./js/lightslider.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $("#carousel-show, #latest-show").lightSlider({
+                    autoWidth: true,
+                    loop: true,
+                    auto: true,
+                    onSliderLoad: function () {
+                        $("#carousel-show, #latest-show").removeClass(
+                            "cs-hidden"
+                        );
+                    },
+                });
+            });
+
+            // Handle onscroll header-nav
+            window.onscroll = function () {
+                myFunction();
+            };
+
+            function myFunction() {
+                const navItem = document.querySelector("nav");
+
+                if (
+                    document.body.scrollTop > 10 ||
+                    document.documentElement.scrollTop > 10
+                ) {
+                    navItem.style.height = "80px";
+                    navItem.style.backgroundColor = "#fff";
+                    navItem.style.boxShadow =
+                        "5px 10px 30px rgba(53, 53, 53, 0.2)";
+                } else {
+                    navItem.style.height = "100px";
+                    navItem.style.backgroundColor = "transparent";
+                    navItem.style.boxShadow = "none";
+                }
+            }
+
+            const menu = document.querySelector(".menu");
+            const menuBtn = document.querySelector(".menu-btn");
+            const closeBtn = document.querySelector(".close-btn");
+
+            // Catch Event
+            menuBtn.addEventListener("click", () => {
+                menu.classList.add("active");
+            });
+
+            closeBtn.addEventListener("click", () => {
+                menu.classList.remove("active");
+            });
+        </script>
+    </body>
+</html>

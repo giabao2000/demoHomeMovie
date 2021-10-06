@@ -1,0 +1,337 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common */
+body {
+    font-family: "Poppins";
+    background-color: rgba(151, 151, 151, 0.03);
+    height: 2000px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    padding: 20px 30px;
+}
+
+.cs-hidden {
+    overflow: visible !important;
+}
+
+/* Navigation */
+nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition: all linear 0.5s;
+}
+
+nav .menu {
+    display: flex;
+    position: relative;
+}
+
+nav .menu li a {
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #585858;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 16px 22px;
+    display: block;
+}
+
+nav .menu li a:hover {
+    color: aqua;
+}
+
+.search {
+    width: 250px;
+    height: 40px;
+    background-color: rgba(245, 245, 245, 0.8);
+    border-radius: 20px;
+    padding: 0px 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.close-btn {
+    display: none;
+}
+
+.close-btn i {
+    color: #fff;
+    font-size: 30px;
+}
+
+/* Carousel */
+.carousel {
+    padding-top: 120px;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+#carousel-show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item {
+    width: 430px;
+    height: 250px;
+    background-color: red;
+    box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 10px 20px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    /* giữ tỷ lệ ảnh và lấp đầy box */
+    object-fit: cover;
+    /* Thuộc tính này xác định bên trong box các hình ảnh sẽ được bố trí ở đâu trong box. */
+    object-position: top;
+    transition: all linear 0.2s;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.2);
+}
+
+/* Latest */
+.latest {
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+.latest-item {
+    width: 200px;
+    border-radius: 10px;
+    margin: 30px;
+    overflow: hidden;
+    transition: all linear 0.5s;
+    background-color: #ccc;
+}
+
+.latest-item:hover {
+    animation: latestAnimation linear 0.5s forwards;
+}
+
+@keyframes latestAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.latest-item-img {
+    width: 100%;
+    height: 270px;
+}
+
+.latest-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.latest-b-text {
+    color: #1a1a1a;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.latest-b-text p {
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0px;
+}
+
+/* Movies */
+.movies {
+    padding-top: 120px;
+}
+
+.movies-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.movies-item {
+    width: 300px;
+    border-radius: 10px;
+    background-color: #ccc;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.movies-item-img {
+    width: 100%;
+    height: 420px;
+    position: relative;
+}
+
+.movies-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movies-item-text {
+    padding: 12px;
+}
+
+.movies-item-text a {
+    text-align: center;
+    font-weight: 600;
+    color: #1a1a1a;
+    display: block;
+    margin-top: 10px;
+}
+
+.quality {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1f1f1f;
+    color: red;
+    font-weight: 600;
+    border-radius: 0px 0px 10px 10px;
+    padding: 5px 20px;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* 
+    mobile: width < 740px
+    Tablet: >= 740px and < 1024px
+    PC: >= 1024px 
+*/
+
+@media (max-width: 1024px) {
+    nav .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        display: block;
+        background-color: #23252b;
+        width: 300px;
+        height: 100vh;
+        padding: 90px 50px;
+        justify-content: center;
+        visibility: hidden;
+        transition: all linear 0.5s;
+        z-index: 2;
+    }
+
+    nav .menu.active {
+        right: 0;
+        visibility: visible;
+    }
+
+    nav .menu li a {
+        height: 60px;
+        color: #fff;
+    }
+
+    .menu-btn {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        padding: 10px 20px;
+        display: block;
+        font-size: 30px;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 20px;
+        display: block;
+    }
+}
+
+@media (max-width: 739px) {
+    .nav {
+        justify-content: space-around;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .carousel-item {
+        max-width: 300px;
+        height: 180px;
+        margin: 10px;
+    }
+
+    nav .menu {
+        width: 100%;
+    }
+
+    .latest-item {
+        width: 220px;
+    }
+
+    .movies-item {
+        flex-direction: column;
+        width: 90%;
+    }
+}
