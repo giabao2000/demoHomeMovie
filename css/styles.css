@@ -31,6 +31,7 @@ a {
     letter-spacing: 1px;
     color: #1a1a1a;
     padding: 20px 30px;
+    text-align: center;
 }
 
 .cs-hidden {
@@ -70,7 +71,7 @@ nav .menu li a {
 }
 
 nav .menu li a:hover {
-    color: aqua;
+    color: red;
 }
 
 .search {
@@ -105,8 +106,8 @@ nav .menu li a:hover {
     font-size: 30px;
 }
 
-/* Carousel */
-.carousel {
+/* Showcase */
+.showcase {
     padding-top: 120px;
     background-color: #fff;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -114,23 +115,16 @@ nav .menu li a:hover {
     width: 100%;
 }
 
-#carousel-show {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel-item {
-    width: 430px;
+.showcase-item {
+    width: 520px;
     height: 250px;
-    background-color: red;
     box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     margin: 10px 20px;
     overflow: hidden;
 }
 
-.carousel-item img {
+.showcase-item img {
     width: 100%;
     height: 100%;
     /* giữ tỷ lệ ảnh và lấp đầy box */
@@ -140,7 +134,7 @@ nav .menu li a:hover {
     transition: all linear 0.2s;
 }
 
-.carousel-item img:hover {
+.showcase-item img:hover {
     transform: scale(1.2);
 }
 
@@ -209,14 +203,18 @@ nav .menu li a:hover {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    background-color: red;
 }
 
 .movies-item {
-    width: 300px;
-    border-radius: 10px;
-    background-color: #ccc;
+    margin: 20px 0px;
+    padding: 0 15px;
     overflow: hidden;
-    margin: 20px;
+    transition: all linear 0.2s;
+}
+
+.movies-item:hover {
+    animation: latestAnimation linear 0.5s forwards;
 }
 
 .movies-item-img {
@@ -229,10 +227,13 @@ nav .menu li a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px 10px 0 0;
 }
 
 .movies-item-text {
     padding: 12px;
+    background-color: #ccc;
+    border-radius: 0 0 10px 10px;
 }
 
 .movies-item-text a {
@@ -324,6 +325,14 @@ nav .menu li a:hover {
 
     nav .menu {
         width: 100%;
+    }
+
+    .showcase-item {
+        width: 324px;
+    }
+
+    .showcase-item {
+        min-width: 300px;
     }
 
     .latest-item {
