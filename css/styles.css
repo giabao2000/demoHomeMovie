@@ -438,15 +438,6 @@ footer {
         min-width: 300px;
     }
 
-    .latest-item {
-        width: 220px;
-    }
-
-    .movies-item {
-        flex-direction: column;
-        width: 90%;
-    }
-
     /* footer */
     .footer-left,
     .footer-right {
